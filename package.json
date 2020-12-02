@@ -1,0 +1,10 @@
+{
+  "name": "advent-of-code-2020",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Adriaan Knapen",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^4.1.2"
+  }
+}
