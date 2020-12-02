@@ -5,6 +5,7 @@
   "author": "Adriaan Knapen",
   "license": "MIT",
   "scripts": {
+    "start": "ts-node",
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
