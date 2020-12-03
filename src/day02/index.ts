@@ -1,9 +1,7 @@
 import { exit } from "process"
-import { loadData } from "../util"
+import { loadData, sum } from "../util"
 
 const data = loadData('data/day02.txt')
-
-const sum = (a: number, b: number) => a + b
 
 const input = data.toString()
   .split("\n")

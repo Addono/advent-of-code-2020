@@ -7,3 +7,9 @@ export const loadData = (defaultPath: string): Buffer => {
 
   return fs.readFileSync(pathname)
 }
+
+export const loadDataAsStringArray = (defaultPath: string): string[] => loadData(defaultPath).toString().split("\n")
+
+export const sum = (a: number, b: number) => a + b
+
+export const multiply = (a: number, b: number) => a * b
