@@ -1,4 +1,3 @@
-import { exit } from "process"
 import { sum, loadDataAsStringArray, multiply } from '../util';
 
 const data: string[] = loadDataAsStringArray('data/day03.txt')
