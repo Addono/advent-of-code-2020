@@ -13,3 +13,5 @@ export const loadDataAsStringArray = (defaultPath: string): string[] => loadData
 export const sum = (a: number, b: number) => a + b
 
 export const multiply = (a: number, b: number) => a * b
+
+export const max = (a: number, b: number) => a > b ? a : b
