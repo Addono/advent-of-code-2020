@@ -1,5 +1,4 @@
-import { allowedNodeEnvironmentFlags } from 'process'
-import { sum, loadDataAsStringArray, multiply, loadData } from '../util'
+import { loadData } from '../util'
 
 const data: string = loadData('data/day04.txt').toString()
 
