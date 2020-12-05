@@ -3,8 +3,14 @@ import boardingPassToSeatId from './boardingPassToSeatId'
 
 const data: string[] = loadDataAsStringArray('data/day05.txt')
 
-const part1 = data
-  .map(boardingPassToSeatId)
-  .reduce(max)  // Find the highest seat id
+const seatIds: number[] = data.map(boardingPassToSeatId)
+  
+// Find the highest seat id
+console.log("Day 5", "Part 1", seatIds.reduce(max))
 
-console.log("Day 5", "Part 1", part1)
+const missingSeatId = seatIds
+  .sort() // Sort the seat ids in ascending order
+  .reduce((v1, v2) => v1 + 1 === v2 ? v2 : v1) // find the seat id of the one before the missing one
+  + 1 // add one to get the id of the missing seat
+
+console.log("Day 5", "Part 2", missingSeatId)
